@@ -15,7 +15,7 @@ namespace WebBrowser
 
         public Form1() {
            InitializeComponent();
-           this.TopMost = true;              
+           this.TopMost = true;           
            
            webBrowser1.Navigate("https://www.google.com/");                 
         }
@@ -26,7 +26,7 @@ namespace WebBrowser
 
         private void toolStripButton1_Click(object sender, EventArgs e) {
             if (x) {
-                this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+                this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
                 this.toolStripButton1.Image = global::WebBrowser.Properties.Resources.unlock;
                 x = !x;
             }
